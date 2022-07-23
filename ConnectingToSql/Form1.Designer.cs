@@ -30,13 +30,28 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
+            this.txtAdress = new System.Windows.Forms.TextBox();
+            this.cmbClass = new System.Windows.Forms.ComboBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(332, 47);
+            this.button1.Location = new System.Drawing.Point(33, 18);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 56);
+            this.button1.Size = new System.Drawing.Size(41, 46);
             this.button1.TabIndex = 0;
             this.button1.Text = "Connect To SQL server";
             this.button1.UseVisualStyleBackColor = true;
@@ -44,24 +59,163 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(332, 145);
+            this.textBox1.Location = new System.Drawing.Point(33, 70);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 197);
+            this.textBox1.Size = new System.Drawing.Size(166, 161);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(109, 231);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(74, 100);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnConnect);
+            this.groupBox2.Controls.Add(this.btnSave);
+            this.groupBox2.Controls.Add(this.cmbClass);
+            this.groupBox2.Controls.Add(this.txtAdress);
+            this.groupBox2.Controls.Add(this.txtContact);
+            this.groupBox2.Controls.Add(this.txtName);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(503, 256);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(143, 139);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Student Class";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Student Adress";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 190);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Student Contact";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(144, 37);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(143, 20);
+            this.txtName.TabIndex = 4;
+            // 
+            // txtContact
+            // 
+            this.txtContact.Location = new System.Drawing.Point(144, 187);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(143, 20);
+            this.txtContact.TabIndex = 5;
+            // 
+            // txtAdress
+            // 
+            this.txtAdress.Location = new System.Drawing.Point(144, 137);
+            this.txtAdress.Multiline = true;
+            this.txtAdress.Name = "txtAdress";
+            this.txtAdress.Size = new System.Drawing.Size(143, 44);
+            this.txtAdress.TabIndex = 6;
+            // 
+            // cmbClass
+            // 
+            this.cmbClass.FormattingEnabled = true;
+            this.cmbClass.Items.AddRange(new object[] {
+            "Sauron",
+            "Morgoth",
+            "Victor",
+            "Rodin",
+            "Gollum",
+            "Gandalf",
+            "Legolas",
+            "Gimli den starke",
+            "Frodo",
+            "SAM THE KING",
+            "Pippin",
+            "Merry",
+            "Faramir",
+            "Boromir",
+            "Radagast",
+            "Aragorn"});
+            this.cmbClass.Location = new System.Drawing.Point(144, 89);
+            this.cmbClass.Name = "cmbClass";
+            this.cmbClass.Size = new System.Drawing.Size(143, 21);
+            this.cmbClass.TabIndex = 7;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(180, 267);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(180, 316);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.TabIndex = 9;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 431);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(717, 432);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -69,6 +223,18 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.ComboBox cmbClass;
+        private System.Windows.Forms.TextBox txtAdress;
+        private System.Windows.Forms.TextBox txtContact;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
 
